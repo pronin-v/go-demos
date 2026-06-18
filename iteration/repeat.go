@@ -1,8 +1,11 @@
 package iteration
 
-func Repeat(substr string, iterations int) (result string) {
+import "strings"
+
+func Repeat(substr string, iterations int) string {
+	var result strings.Builder
 	for i := 0; i < iterations; i++ {
-		result += substr
+		result.WriteString(substr)
 	}
-	return
+	return result.String()
 }
