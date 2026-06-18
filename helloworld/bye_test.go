@@ -1,6 +1,9 @@
-package main
+package helloworld
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestBye(t *testing.T) {
 	t.Run("Goodbye message for empty name", func(t *testing.T) {
@@ -26,4 +29,10 @@ func TestBye(t *testing.T) {
 		want := "Adios, amigo"
 		AssertCorrectMessage(t, got, want)
 	})
+}
+
+func ExampleBye() {
+	msg := Bye("Pedro", "Spanish")
+	fmt.Println(msg)
+	// Output: Adios, Pedro
 }

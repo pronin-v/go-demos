@@ -1,4 +1,4 @@
-package main
+package helloworld
 
 const (
 	englishHelloPrefix = "Hello, "
@@ -7,6 +7,8 @@ const (
 	russianHelloPrefix = "Привет, "
 )
 
+// Returns greeting message for name using specified language
+// or english by default
 func Hello(name string, lang string) string {
 	if name == "" {
 		name = "World"

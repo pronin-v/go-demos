@@ -1,4 +1,4 @@
-package main
+package helloworld
 
 func Bye(name, lang string) string {
 	if name == "" {
