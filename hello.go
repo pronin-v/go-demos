@@ -1,10 +1,6 @@
 package main
 
 const (
-	spanish = "Spanish"
-	french  = "French"
-	russian = "Russian"
-
 	englishHelloPrefix = "Hello, "
 	spanishHelloPrefix = "Hola, "
 	frenchHelloPrefix  = "Bonjour, "
