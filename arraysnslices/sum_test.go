@@ -21,3 +21,9 @@ func TestSumAll(t *testing.T) {
 		t.Errorf("got %v want %v", got, want)
 	}
 }
+
+func BenchmarkSumAll(b *testing.B) {
+	for b.Loop() {
+		SumAll([]int{1, 2, 3, 4, 5, 6}, []int{9, 8, 7, 6})
+	}
+}
